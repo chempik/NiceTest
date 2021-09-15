@@ -39,6 +39,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.IO.Abstractions": {
+              "target": "Package",
+              "version": "[13.2.47, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

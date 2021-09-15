@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceTest", "NiceTest\NiceTest.csproj", "{433C8DF3-1510-4B19-BC1D-C94CFD88CE24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiceTest", "NiceTest\NiceTest.csproj", "{433C8DF3-1510-4B19-BC1D-C94CFD88CE24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTest", "xUnitTest\xUnitTest.csproj", "{C1251F61-E3BA-4D57-A5ED-B1331F46D801}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{433C8DF3-1510-4B19-BC1D-C94CFD88CE24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{433C8DF3-1510-4B19-BC1D-C94CFD88CE24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{433C8DF3-1510-4B19-BC1D-C94CFD88CE24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1251F61-E3BA-4D57-A5ED-B1331F46D801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1251F61-E3BA-4D57-A5ED-B1331F46D801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1251F61-E3BA-4D57-A5ED-B1331F46D801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1251F61-E3BA-4D57-A5ED-B1331F46D801}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
