@@ -9,6 +9,9 @@ namespace NiceTest
 {
     public class Substring
     {
+        private const string _wordBoundaryRegex = "(\\b|\\W)";
+        private const string _ignoreSpaceAndEnterRegex = "(\\s|\\n|\\r\\n|)*";
+        private const string _enterRegex = "\\r\\n";
         private IFileSystem _fileSystem;
         public Substring(IFileSystem fileSystem)
         {
@@ -21,14 +24,7 @@ namespace NiceTest
             string fileСontent = fileReader.Read(file);
             var regexOption = RegexOptions.None;
 
-            if (setting.IgnoreSpace)
-            {
-                substring = IgnoreSpace(substring);
-            }
-            else
-            {
-                substring = Regex.Escape(substring);
-            }
+            substring = IgnoreSpace(substring, setting.IgnoreSpace);
 
             if (setting.CaseSensitive)
             {
@@ -37,36 +33,52 @@ namespace NiceTest
 
             if (setting.FullWord)
             {
-               substring = "(\\b|\\W)" + substring + "(\\b|\\W)";
+               substring = _wordBoundaryRegex + substring + _wordBoundaryRegex;
             }
 
-            var enterRegex = new Regex("\\r\\n");
-            var enterList = enterRegex.Matches(fileСontent).ToList();
+            var enterSplitList = RuleRegex(new Regex(_enterRegex), fileСontent);
 
-            var regex = new Regex(substring, regexOption);
-            var list = regex.Matches(fileСontent);
-            
+            var ruleResultList = RuleRegex(new Regex(substring, regexOption), fileСontent);
+
+            return new Result(ruleResultList.Count, StringNumbers(ruleResultList,enterSplitList));
+        }
+        private List<int> StringNumbers(List<Match> ruleResultList, List<Match> enterSplitList)
+        {
             var lineNumber = new HashSet<int>();
-            for (int i = 0; i < list.Count; i++)
-            { 
-                lineNumber.Add(enterList.FindLastIndex(x => x.Index < list[i].Index) + 2);
+
+            for (int i = 0; i < ruleResultList.Count; i++)
+            {
+                lineNumber.Add(enterSplitList.FindLastIndex(x => x.Index < ruleResultList[i].Index) + 2);
             }
 
-            return new Result(list.Count, lineNumber.ToList());
+            return lineNumber.ToList();
         }
 
-        private string IgnoreSpace (string substring)
+        private List<Match> RuleRegex(Regex regex, string fileСontent)
         {
-            var substringSplit = substring.ToCharArray();
-            string tmp = "";
+           return regex.Matches(fileСontent).ToList();
+        } 
 
-            for (int i = 0; i < substringSplit.Length - 1; i++)
+        private string IgnoreSpace (string substring, bool ignoreSpace) 
+        {
+            if (ignoreSpace)
             {
-                tmp = tmp + Regex.Escape(substringSplit[i].ToString()) + "(\\s|\\n|\\r\\n|)*";
+                var substringSplit = substring.ToCharArray();
+                string tmp = "";
+
+                for (int i = 0; i < substringSplit.Length - 1; i++)
+                {
+                    tmp = tmp + Regex.Escape(substringSplit[i].ToString()) + _ignoreSpaceAndEnterRegex;
+                }
+
+                tmp = tmp + Regex.Escape(substringSplit[substringSplit.Length - 1].ToString());
+                return tmp;
             }
 
-            tmp = tmp + Regex.Escape(substringSplit[substringSplit.Length - 1].ToString());
-            return tmp;
+            else
+            {
+                return Regex.Escape(substring);
+            }
         }
     }
 }
