@@ -1,0 +1,15 @@
+C:\Users\Viego\source\repos\NiceTest\NiceTest\bin\Debug\netcoreapp3.1\NiceTest.exe
+C:\Users\Viego\source\repos\NiceTest\NiceTest\bin\Debug\netcoreapp3.1\NiceTest.deps.json
+C:\Users\Viego\source\repos\NiceTest\NiceTest\bin\Debug\netcoreapp3.1\NiceTest.runtimeconfig.json
+C:\Users\Viego\source\repos\NiceTest\NiceTest\bin\Debug\netcoreapp3.1\NiceTest.runtimeconfig.dev.json
+C:\Users\Viego\source\repos\NiceTest\NiceTest\bin\Debug\netcoreapp3.1\NiceTest.dll
+C:\Users\Viego\source\repos\NiceTest\NiceTest\bin\Debug\netcoreapp3.1\NiceTest.pdb
+C:\Users\Viego\source\repos\NiceTest\NiceTest\obj\Debug\netcoreapp3.1\NiceTest.csproj.AssemblyReference.cache
+C:\Users\Viego\source\repos\NiceTest\NiceTest\obj\Debug\netcoreapp3.1\NiceTest.AssemblyInfoInputs.cache
+C:\Users\Viego\source\repos\NiceTest\NiceTest\obj\Debug\netcoreapp3.1\NiceTest.AssemblyInfo.cs
+C:\Users\Viego\source\repos\NiceTest\NiceTest\obj\Debug\netcoreapp3.1\NiceTest.csproj.CoreCompileInputs.cache
+C:\Users\Viego\source\repos\NiceTest\NiceTest\obj\Debug\netcoreapp3.1\NiceTest.dll
+C:\Users\Viego\source\repos\NiceTest\NiceTest\obj\Debug\netcoreapp3.1\NiceTest.pdb
+C:\Users\Viego\source\repos\NiceTest\NiceTest\obj\Debug\netcoreapp3.1\NiceTest.genruntimeconfig.cache
+C:\Users\Viego\source\repos\NiceTest\NiceTest\bin\Debug\netcoreapp3.1\System.IO.Abstractions.dll
+C:\Users\Viego\source\repos\NiceTest\NiceTest\obj\Debug\netcoreapp3.1\NiceTest.csproj.CopyComplete

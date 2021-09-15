@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j8jmeSiP526Vu1ScpF6kbYULPniHn0wZY5FZkkmDfXk1izM588c+Jr7xOaE0ivfc00NxUI8DxdsvxIuLMs2ZhQ==",
+  "dgSpecHash": "GE5VHR3lztD5N1s5Y+jPnujrpo7VcWG2EsAeUKJFcie7x30xmrIBCwBzh0S/uJSAT/j6pHea00oappiljjK9Rg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Viego\\source\\repos\\NiceTest\\xUnitTest\\xUnitTest.csproj",
   "expectedPackageFiles": [
@@ -102,5 +102,12 @@
     "C:\\Users\\Viego\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
     "C:\\Users\\Viego\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Viego\\source\\repos\\NiceTest\\xUnitTest\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "ciW/m+V5IvsO6L1PnYZV+d98QeezVM2gSSffdsrY9jlOzc1XoXPDs2DlHEg+aamw7RxCMU4Y3DVyBPFVMA4JyQ==",
+  "dgSpecHash": "jBKJncftRdLCjxz928aPqdcqEqUs4k2Gc0KAoiL6BAdGwxqVM2RCZT4fVatFnWeTE9MTpn+nGRIelS60MT14xA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Viego\\source\\repos\\NiceTest\\NiceTest\\NiceTest.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Viego\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Viego\\.nuget\\packages\\system.io.abstractions\\13.2.47\\system.io.abstractions.13.2.47.nupkg.sha512",
+    "C:\\Users\\Viego\\.nuget\\packages\\system.io.filesystem.accesscontrol\\4.7.0\\system.io.filesystem.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Viego\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Viego\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
